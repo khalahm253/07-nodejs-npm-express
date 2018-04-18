@@ -5,10 +5,11 @@ let app = express();
 
 const PORT = process.env.PORT || 3000;
 
+// Direct the browser to index.html
 app.use(express.static('./public'));
 
+// Direct to /new.html
 app.get('/new', (request, response) => {
-  console.log('in new')
   response.sendFile('new.html', {root: './public'});
 });
 
@@ -18,7 +19,6 @@ app.post('/articles', express.urlencoded(), (request, response) => {
 });
 
 app.use((req, res) => {
-  console.log('no file')
   res.status(404).send('Sorry, that route does not exist.');
 });
 
