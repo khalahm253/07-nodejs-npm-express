@@ -1,0 +1,15 @@
+{
+  "name": "khalil-amanda",
+  "version": "1.0.0",
+  "description": "Lab-07",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "khalil-amanda",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
